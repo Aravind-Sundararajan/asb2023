@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<IKTool name="GIL03_xslow1">
+	<model_file> ../../GIL03_gait2392_simbody.osim </model_file>
+	<optimizer_algorithm>cfsqp</optimizer_algorithm>
+	<IKTaskSet file="../../../gait2392_GIL_IK_Tasks.xml"/>
+	<IKTrialSet>
+		<objects>
+		<IKTrial name="GIL03_xslow1_ik">
+			<marker_file> GIL03_xslow1.trc </marker_file>
+			<coordinate_file> GIL03_xslow1.mot </coordinate_file>
+			<time_range> 0.27916665 1.60833335 </time_range>
+			<output_motion_file> GIL03_xslow1_ik.mot </output_motion_file>
+			<include_markers> true </include_markers>
+		</IKTrial>
+		</objects>
+	</IKTrialSet>
+</IKTool>

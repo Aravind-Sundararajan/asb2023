@@ -1,0 +1,28 @@
+-------------------------------------------------------
+This program includes software developed by the
+Apache Software Foundation (http://www.apache.org/).
+-------------------------------------------------------
+
+Deleted model 
+RegisterTypes_SdfastEngine
+
+-------------------------------------------------------
+Library SdfastEngine...
+-------------------------------------------------------
+
+RegisterTypes_SimbodyEngine
+
+-------------------------------------------------------
+Library SimbodyEngine...
+-------------------------------------------------------
+
+Constructing investigation from setup file GIL03_slow3_Setup_CMC_Constrained.xml.
+
+
+Exception:
+  Object: ERR- Could not open file GIL03_slow3_Setup_CMC_Constrained.xml. It
+  may not exist or you don't have permission to read it.
+  file= \Projects\OpenSim105\OpenSim\Common\Object.cpp
+  line= 122
+
+Deleted model default
