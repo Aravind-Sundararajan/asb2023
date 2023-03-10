@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ScaleTool name="GIL12">
+
+	<mass> 26.1 </mass>
+	<height> 1270.000000 </height>
+	<age> 0 </age>
+	<notes>  </notes>
+
+	
+
+	<GenericModelMaker name="">
+		<model_file> ../../gait2392_simbody.osim </model_file>
+		<marker_set_file>../../gait2392_GIL_Scale_MarkerSet.xml </marker_set_file>
+	</GenericModelMaker>
+
+	<ModelScaler name="">
+		<scaling_order> measurements </scaling_order>
+		<MeasurementSet file="../../gait2392_GIL_Scale_MeasurementSet.xml"/>
+		<marker_file> GIL12_static.trc </marker_file>
+		<time_range> 0.291667 1.925000 </time_range>
+		<preserve_mass_distribution> true </preserve_mass_distribution>
+		<output_scale_file> GIL12_gait2392_simbody_ScaleSet_Applied.xml </output_scale_file>
+		
+	</ModelScaler>
+
+	<MarkerPlacer name="">
+		<IKTaskSet file="../../gait2392_GIL_Scale_Tasks.xml"/>
+		<marker_file> GIL12_static.trc </marker_file>
+		<coordinate_file> GIL12_static.mot </coordinate_file>
+		<time_range> 0.291667 1.925000 </time_range>
+		<output_model_file> ../GIL12_gait2392_simbody.osim </output_model_file>
+		<output_motion_file> GIL12_gait2392_simbody_static_output.mot </output_motion_file>
+		<optimizer_algorithm> cfsqp </optimizer_algorithm>
+	</MarkerPlacer>
+</ScaleTool>

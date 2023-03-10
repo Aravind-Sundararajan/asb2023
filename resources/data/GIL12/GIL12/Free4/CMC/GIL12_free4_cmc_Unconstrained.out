@@ -1,0 +1,656 @@
+-------------------------------------------------------
+This program includes software developed by the
+Apache Software Foundation (http://www.apache.org/).
+-------------------------------------------------------
+
+Deleted model 
+RegisterTypes_SdfastEngine
+
+-------------------------------------------------------
+Library SdfastEngine...
+-------------------------------------------------------
+
+dlerror: libosimSimbodyEngine.so: cannot open shared object file: No such file or directory
+ERROR- library osimSimbodyEngine could not be loaded.
+
+Constructing investigation from setup file GIL12_free4_Setup_CMC_Jan08_unconstr.xml.
+
+AbstractTool GIL12_free4_fixed_CMC_Jan08_unconstr loading model '../../GIL12_gait2392_patella_fixed_sdfast_avg_dMass_COM.osim'
+Created model GIL12 from file ../../GIL12_gait2392_patella_fixed_sdfast_avg_dMass_COM.osim
+Adding actuator set from ../../GIL12_CMC_Actuators.xml
+Linking SdfastEngine to model library gait23_patella
+Loaded library 
+Joint ground_pelvis: origITJ=0,0,0  scaledITJ = 0,0,0
+Joint ground_pelvis: origBTJ=0.0707,0,0  scaledBTJ = 0.0482463,0,0
+Joint hip_r: origITJ=0,-0.0661,0.0835  scaledITJ = 0,-0.0451072,0.0569811
+Joint hip_l: origITJ=0,-0.0661,-0.0835  scaledITJ = 0,-0.0451072,-0.0569811
+Joint back: origITJ=-0.03,0.0815,0  scaledITJ = -0.0204723,0.0556163,0
+Joint hip_r: origBTJ=0,0.17,0  scaledBTJ = 0,0.129957,0
+Joint knee_r: origITJ=0,0.17,0  scaledITJ = 0,0.129957,0
+Joint knee_r: origBTJ=0,0.1867,0  scaledBTJ = 0,0.125465,0
+Joint tib_pat_r: origITJ=0,0.1867,0.0024  scaledITJ = 0,0.125465,0.00161283
+Joint ankle_r: origITJ=0,-0.2433,0  scaledITJ = 0,-0.1635,0
+Joint tib_pat_r: origBTJ=0,0,0  scaledBTJ = 0,0,0
+Joint ankle_r: origBTJ=0,0,0  scaledBTJ = 0,0,0
+Joint subtalar_r: origITJ=-0.04877,-0.04195,0.00792  scaledITJ = -0.032774,-0.0281909,0.00532233
+Joint subtalar_r: origBTJ=-0.1,-0.03,0  scaledBTJ = -0.0758913,-0.0227674,0
+Joint mtp_r: origITJ=0.0788,-0.032,0.00108  scaledITJ = 0.0598024,-0.0242852,0.00081963
+Joint mtp_r: origBTJ=-0.0346,-0.006,0.0175  scaledBTJ = -0.0262584,-0.00455348,0.013281
+Joint hip_l: origBTJ=0,0.17,0  scaledBTJ = 0,0.129957,0
+Joint knee_l: origITJ=0,0.17,0  scaledITJ = 0,0.129957,0
+Joint knee_l: origBTJ=0,0.1867,0  scaledBTJ = 0,0.125465,0
+Joint tib_pat_l: origITJ=0,0.1867,-0.0024  scaledITJ = 0,0.125465,-0.00161283
+Joint ankle_l: origITJ=0,-0.2433,0  scaledITJ = 0,-0.1635,0
+Joint tib_pat_l: origBTJ=0,0,0  scaledBTJ = 0,0,0
+Joint ankle_l: origBTJ=0,0,0  scaledBTJ = 0,0,0
+Joint subtalar_l: origITJ=-0.04877,-0.04195,-0.00792  scaledITJ = -0.032774,-0.0281909,-0.00532233
+Joint subtalar_l: origBTJ=-0.1,-0.03,0  scaledBTJ = -0.0758913,-0.0227674,0
+Joint mtp_l: origITJ=0.0788,-0.032,-0.00108  scaledITJ = 0.0598024,-0.0242852,-0.00081963
+Joint mtp_l: origBTJ=-0.0346,-0.006,-0.0175  scaledBTJ = -0.0262584,-0.00455348,-0.013281
+Joint back: origBTJ=0.03,-0.32,0  scaledBTJ = 0.0103746,-0.222697,0.0016822
+-----------------------------------------------------------------------
+Loaded library
+-----------------------------------------------------------------------
+             MODEL: GIL12
+         actuators: 111
+          analyses: 3
+          contacts: 0
+-----------------------------------------------------------------------
+
+Running tool GIL12_free4_fixed_CMC_Jan08_unconstr.
+MODEL: GIL12
+
+ANALYSES (3)
+analysis[0] = Kinematics
+analysis[1] = Actuation
+analysis[2] = BodyKinematics
+
+BODIES (15)
+body[0] = ground (mass: 0) (inertia: 0 0 0 0 0 0 0 0 0)
+body[1] = pelvis (mass: 4.07857) (inertia: 0.0165789 0 0 0 0.0140469 0 0 0 0.00933772)
+body[2] = femur_r (mass: 3.22123) (inertia: 0.027099 0 0 0 0.00710362 0 0 0 0.0285764)
+body[3] = tibia_r (mass: 1.28397) (inertia: 0.00788237 0 0 0 0.00079762 0 0 0 0.00799185)
+body[4] = patella_r (mass: 0.0346316) (inertia: 0.00020238 0 0 0 0.00020238 0 0 0 0.00020238)
+body[5] = talus_r (mass: 0.0346316) (inertia: 0.0001564 0 0 0 0.0001564 0 0 0 0.0001564)
+body[6] = calcn_r (mass: 0.432896) (inertia: 0.00027924 0 0 0 0.0007779 0 0 0 0.00081779)
+body[7] = toes_r (mass: 0.0750121) (inertia: 1.995e-05 0 0 0 3.989e-05 0 0 0 0.00019946)
+body[8] = femur_l (mass: 3.22123) (inertia: 0.027099 0 0 0 0.00710362 0 0 0 0.0285764)
+body[9] = tibia_l (mass: 1.28397) (inertia: 0.00788237 0 0 0 0.00079762 0 0 0 0.00799185)
+body[10] = patella_l (mass: 0.0346316) (inertia: 0.00020238 0 0 0 0.00020238 0 0 0 0.00020238)
+body[11] = talus_l (mass: 0.0346316) (inertia: 0.0001564 0 0 0 0.0001564 0 0 0 0.0001564)
+body[12] = calcn_l (mass: 0.432896) (inertia: 0.00027924 0 0 0 0.0007779 0 0 0 0.00081779)
+body[13] = toes_l (mass: 0.0750121) (inertia: 1.995e-05 0 0 0 3.989e-05 0 0 0 0.00019946)
+body[14] = torso (mass: 12.0087) (inertia: 0.247313 0 0 0 0.126717 0 0 0 0.240084)
+
+ACTUATORS (111)
+actuator[0] = glut_med1_r (controls: glut_med1_r.excitation)
+actuator[1] = glut_med2_r (controls: glut_med2_r.excitation)
+actuator[2] = glut_med3_r (controls: glut_med3_r.excitation)
+actuator[3] = glut_min1_r (controls: glut_min1_r.excitation)
+actuator[4] = glut_min2_r (controls: glut_min2_r.excitation)
+actuator[5] = glut_min3_r (controls: glut_min3_r.excitation)
+actuator[6] = semimem_r (controls: semimem_r.excitation)
+actuator[7] = semiten_r (controls: semiten_r.excitation)
+actuator[8] = bifemlh_r (controls: bifemlh_r.excitation)
+actuator[9] = bifemsh_r (controls: bifemsh_r.excitation)
+actuator[10] = sar_r (controls: sar_r.excitation)
+actuator[11] = add_long_r (controls: add_long_r.excitation)
+actuator[12] = add_brev_r (controls: add_brev_r.excitation)
+actuator[13] = add_mag1_r (controls: add_mag1_r.excitation)
+actuator[14] = add_mag2_r (controls: add_mag2_r.excitation)
+actuator[15] = add_mag3_r (controls: add_mag3_r.excitation)
+actuator[16] = tfl_r (controls: tfl_r.excitation)
+actuator[17] = pect_r (controls: pect_r.excitation)
+actuator[18] = grac_r (controls: grac_r.excitation)
+actuator[19] = glut_max1_r (controls: glut_max1_r.excitation)
+actuator[20] = glut_max2_r (controls: glut_max2_r.excitation)
+actuator[21] = glut_max3_r (controls: glut_max3_r.excitation)
+actuator[22] = iliacus_r (controls: iliacus_r.excitation)
+actuator[23] = psoas_r (controls: psoas_r.excitation)
+actuator[24] = quad_fem_r (controls: quad_fem_r.excitation)
+actuator[25] = gem_r (controls: gem_r.excitation)
+actuator[26] = peri_r (controls: peri_r.excitation)
+actuator[27] = rect_fem_r (controls: rect_fem_r.excitation)
+actuator[28] = vas_med_r (controls: vas_med_r.excitation)
+actuator[29] = vas_int_r (controls: vas_int_r.excitation)
+actuator[30] = vas_lat_r (controls: vas_lat_r.excitation)
+actuator[31] = med_gas_r (controls: med_gas_r.excitation)
+actuator[32] = lat_gas_r (controls: lat_gas_r.excitation)
+actuator[33] = soleus_r (controls: soleus_r.excitation)
+actuator[34] = tib_post_r (controls: tib_post_r.excitation)
+actuator[35] = flex_dig_r (controls: flex_dig_r.excitation)
+actuator[36] = flex_hal_r (controls: flex_hal_r.excitation)
+actuator[37] = tib_ant_r (controls: tib_ant_r.excitation)
+actuator[38] = per_brev_r (controls: per_brev_r.excitation)
+actuator[39] = per_long_r (controls: per_long_r.excitation)
+actuator[40] = per_tert_r (controls: per_tert_r.excitation)
+actuator[41] = ext_dig_r (controls: ext_dig_r.excitation)
+actuator[42] = ext_hal_r (controls: ext_hal_r.excitation)
+actuator[43] = glut_med1_l (controls: glut_med1_l.excitation)
+actuator[44] = glut_med2_l (controls: glut_med2_l.excitation)
+actuator[45] = glut_med3_l (controls: glut_med3_l.excitation)
+actuator[46] = glut_min1_l (controls: glut_min1_l.excitation)
+actuator[47] = glut_min2_l (controls: glut_min2_l.excitation)
+actuator[48] = glut_min3_l (controls: glut_min3_l.excitation)
+actuator[49] = semimem_l (controls: semimem_l.excitation)
+actuator[50] = semiten_l (controls: semiten_l.excitation)
+actuator[51] = bifemlh_l (controls: bifemlh_l.excitation)
+actuator[52] = bifemsh_l (controls: bifemsh_l.excitation)
+actuator[53] = sar_l (controls: sar_l.excitation)
+actuator[54] = add_long_l (controls: add_long_l.excitation)
+actuator[55] = add_brev_l (controls: add_brev_l.excitation)
+actuator[56] = add_mag1_l (controls: add_mag1_l.excitation)
+actuator[57] = add_mag2_l (controls: add_mag2_l.excitation)
+actuator[58] = add_mag3_l (controls: add_mag3_l.excitation)
+actuator[59] = tfl_l (controls: tfl_l.excitation)
+actuator[60] = pect_l (controls: pect_l.excitation)
+actuator[61] = grac_l (controls: grac_l.excitation)
+actuator[62] = glut_max1_l (controls: glut_max1_l.excitation)
+actuator[63] = glut_max2_l (controls: glut_max2_l.excitation)
+actuator[64] = glut_max3_l (controls: glut_max3_l.excitation)
+actuator[65] = iliacus_l (controls: iliacus_l.excitation)
+actuator[66] = psoas_l (controls: psoas_l.excitation)
+actuator[67] = quad_fem_l (controls: quad_fem_l.excitation)
+actuator[68] = gem_l (controls: gem_l.excitation)
+actuator[69] = peri_l (controls: peri_l.excitation)
+actuator[70] = rect_fem_l (controls: rect_fem_l.excitation)
+actuator[71] = vas_med_l (controls: vas_med_l.excitation)
+actuator[72] = vas_int_l (controls: vas_int_l.excitation)
+actuator[73] = vas_lat_l (controls: vas_lat_l.excitation)
+actuator[74] = med_gas_l (controls: med_gas_l.excitation)
+actuator[75] = lat_gas_l (controls: lat_gas_l.excitation)
+actuator[76] = soleus_l (controls: soleus_l.excitation)
+actuator[77] = tib_post_l (controls: tib_post_l.excitation)
+actuator[78] = flex_dig_l (controls: flex_dig_l.excitation)
+actuator[79] = flex_hal_l (controls: flex_hal_l.excitation)
+actuator[80] = tib_ant_l (controls: tib_ant_l.excitation)
+actuator[81] = per_brev_l (controls: per_brev_l.excitation)
+actuator[82] = per_long_l (controls: per_long_l.excitation)
+actuator[83] = per_tert_l (controls: per_tert_l.excitation)
+actuator[84] = ext_dig_l (controls: ext_dig_l.excitation)
+actuator[85] = ext_hal_l (controls: ext_hal_l.excitation)
+actuator[86] = ercspn_r (controls: ercspn_r.excitation)
+actuator[87] = ercspn_l (controls: ercspn_l.excitation)
+actuator[88] = intobl_r (controls: intobl_r.excitation)
+actuator[89] = intobl_l (controls: intobl_l.excitation)
+actuator[90] = extobl_r (controls: extobl_r.excitation)
+actuator[91] = extobl_l (controls: extobl_l.excitation)
+actuator[92] = FX (controls: FX.excitation)
+actuator[93] = FY (controls: FY.excitation)
+actuator[94] = FZ (controls: FZ.excitation)
+actuator[95] = MX (controls: MX.excitation)
+actuator[96] = MY (controls: MY.excitation)
+actuator[97] = MZ (controls: MZ.excitation)
+actuator[98] = hip_flexion_r_reserve (controls: hip_flexion_r_reserve.excitation)
+actuator[99] = hip_adduction_r_reserve (controls: hip_adduction_r_reserve.excitation)
+actuator[100] = hip_rotation_r_reserve (controls: hip_rotation_r_reserve.excitation)
+actuator[101] = knee_angle_r_reserve (controls: knee_angle_r_reserve.excitation)
+actuator[102] = ankle_angle_r_reserve (controls: ankle_angle_r_reserve.excitation)
+actuator[103] = hip_flexion_l_reserve (controls: hip_flexion_l_reserve.excitation)
+actuator[104] = hip_adduction_l_reserve (controls: hip_adduction_l_reserve.excitation)
+actuator[105] = hip_rotation_l_reserve (controls: hip_rotation_l_reserve.excitation)
+actuator[106] = knee_angle_l_reserve (controls: knee_angle_l_reserve.excitation)
+actuator[107] = ankle_angle_l_reserve (controls: ankle_angle_l_reserve.excitation)
+actuator[108] = lumbar_extension_reserve (controls: lumbar_extension_reserve.excitation)
+actuator[109] = lumbar_bending_reserve (controls: lumbar_bending_reserve.excitation)
+actuator[110] = lumbar_rotation_reserve (controls: lumbar_rotation_reserve.excitation)
+
+CONTACTS (0)
+numControls = 111
+numStates = 250
+numCoordinates = 33
+numSpeeds = 33
+numActuators = 111
+numBodies = 15
+
+STATES (250)
+y[0] = pelvis_tz
+y[1] = pelvis_tx
+y[2] = pelvis_ty
+y[3] = pelvis_tilt
+y[4] = pelvis_list
+y[5] = pelvis_rotation
+y[6] = hip_flexion_r
+y[7] = hip_adduction_r
+y[8] = hip_rotation_r
+y[9] = knee_r_tx
+y[10] = knee_r_ty
+y[11] = knee_angle_r
+y[12] = tib_pat_r_tx
+y[13] = tib_pat_r_ty
+y[14] = tib_pat_r_r1
+y[15] = ankle_angle_r
+y[16] = subtalar_angle_r
+y[17] = mtp_angle_r
+y[18] = hip_flexion_l
+y[19] = hip_adduction_l
+y[20] = hip_rotation_l
+y[21] = knee_l_tx
+y[22] = knee_l_ty
+y[23] = knee_angle_l
+y[24] = tib_pat_l_tx
+y[25] = tib_pat_l_ty
+y[26] = tib_pat_l_r1
+y[27] = ankle_angle_l
+y[28] = subtalar_angle_l
+y[29] = mtp_angle_l
+y[30] = lumbar_extension
+y[31] = lumbar_bending
+y[32] = lumbar_rotation
+y[33] = pelvis_tz_u
+y[34] = pelvis_tx_u
+y[35] = pelvis_ty_u
+y[36] = pelvis_tilt_u
+y[37] = pelvis_list_u
+y[38] = pelvis_rotation_u
+y[39] = hip_flexion_r_u
+y[40] = hip_adduction_r_u
+y[41] = hip_rotation_r_u
+y[42] = knee_r_tx_u
+y[43] = knee_r_ty_u
+y[44] = knee_angle_r_u
+y[45] = tib_pat_r_tx_u
+y[46] = tib_pat_r_ty_u
+y[47] = tib_pat_r_r1_u
+y[48] = ankle_angle_r_u
+y[49] = subtalar_angle_r_u
+y[50] = mtp_angle_r_u
+y[51] = hip_flexion_l_u
+y[52] = hip_adduction_l_u
+y[53] = hip_rotation_l_u
+y[54] = knee_l_tx_u
+y[55] = knee_l_ty_u
+y[56] = knee_angle_l_u
+y[57] = tib_pat_l_tx_u
+y[58] = tib_pat_l_ty_u
+y[59] = tib_pat_l_r1_u
+y[60] = ankle_angle_l_u
+y[61] = subtalar_angle_l_u
+y[62] = mtp_angle_l_u
+y[63] = lumbar_extension_u
+y[64] = lumbar_bending_u
+y[65] = lumbar_rotation_u
+y[66] = glut_med1_r.activation
+y[67] = glut_med1_r.fiber_length
+y[68] = glut_med2_r.activation
+y[69] = glut_med2_r.fiber_length
+y[70] = glut_med3_r.activation
+y[71] = glut_med3_r.fiber_length
+y[72] = glut_min1_r.activation
+y[73] = glut_min1_r.fiber_length
+y[74] = glut_min2_r.activation
+y[75] = glut_min2_r.fiber_length
+y[76] = glut_min3_r.activation
+y[77] = glut_min3_r.fiber_length
+y[78] = semimem_r.activation
+y[79] = semimem_r.fiber_length
+y[80] = semiten_r.activation
+y[81] = semiten_r.fiber_length
+y[82] = bifemlh_r.activation
+y[83] = bifemlh_r.fiber_length
+y[84] = bifemsh_r.activation
+y[85] = bifemsh_r.fiber_length
+y[86] = sar_r.activation
+y[87] = sar_r.fiber_length
+y[88] = add_long_r.activation
+y[89] = add_long_r.fiber_length
+y[90] = add_brev_r.activation
+y[91] = add_brev_r.fiber_length
+y[92] = add_mag1_r.activation
+y[93] = add_mag1_r.fiber_length
+y[94] = add_mag2_r.activation
+y[95] = add_mag2_r.fiber_length
+y[96] = add_mag3_r.activation
+y[97] = add_mag3_r.fiber_length
+y[98] = tfl_r.activation
+y[99] = tfl_r.fiber_length
+y[100] = pect_r.activation
+y[101] = pect_r.fiber_length
+y[102] = grac_r.activation
+y[103] = grac_r.fiber_length
+y[104] = glut_max1_r.activation
+y[105] = glut_max1_r.fiber_length
+y[106] = glut_max2_r.activation
+y[107] = glut_max2_r.fiber_length
+y[108] = glut_max3_r.activation
+y[109] = glut_max3_r.fiber_length
+y[110] = iliacus_r.activation
+y[111] = iliacus_r.fiber_length
+y[112] = psoas_r.activation
+y[113] = psoas_r.fiber_length
+y[114] = quad_fem_r.activation
+y[115] = quad_fem_r.fiber_length
+y[116] = gem_r.activation
+y[117] = gem_r.fiber_length
+y[118] = peri_r.activation
+y[119] = peri_r.fiber_length
+y[120] = rect_fem_r.activation
+y[121] = rect_fem_r.fiber_length
+y[122] = vas_med_r.activation
+y[123] = vas_med_r.fiber_length
+y[124] = vas_int_r.activation
+y[125] = vas_int_r.fiber_length
+y[126] = vas_lat_r.activation
+y[127] = vas_lat_r.fiber_length
+y[128] = med_gas_r.activation
+y[129] = med_gas_r.fiber_length
+y[130] = lat_gas_r.activation
+y[131] = lat_gas_r.fiber_length
+y[132] = soleus_r.activation
+y[133] = soleus_r.fiber_length
+y[134] = tib_post_r.activation
+y[135] = tib_post_r.fiber_length
+y[136] = flex_dig_r.activation
+y[137] = flex_dig_r.fiber_length
+y[138] = flex_hal_r.activation
+y[139] = flex_hal_r.fiber_length
+y[140] = tib_ant_r.activation
+y[141] = tib_ant_r.fiber_length
+y[142] = per_brev_r.activation
+y[143] = per_brev_r.fiber_length
+y[144] = per_long_r.activation
+y[145] = per_long_r.fiber_length
+y[146] = per_tert_r.activation
+y[147] = per_tert_r.fiber_length
+y[148] = ext_dig_r.activation
+y[149] = ext_dig_r.fiber_length
+y[150] = ext_hal_r.activation
+y[151] = ext_hal_r.fiber_length
+y[152] = glut_med1_l.activation
+y[153] = glut_med1_l.fiber_length
+y[154] = glut_med2_l.activation
+y[155] = glut_med2_l.fiber_length
+y[156] = glut_med3_l.activation
+y[157] = glut_med3_l.fiber_length
+y[158] = glut_min1_l.activation
+y[159] = glut_min1_l.fiber_length
+y[160] = glut_min2_l.activation
+y[161] = glut_min2_l.fiber_length
+y[162] = glut_min3_l.activation
+y[163] = glut_min3_l.fiber_length
+y[164] = semimem_l.activation
+y[165] = semimem_l.fiber_length
+y[166] = semiten_l.activation
+y[167] = semiten_l.fiber_length
+y[168] = bifemlh_l.activation
+y[169] = bifemlh_l.fiber_length
+y[170] = bifemsh_l.activation
+y[171] = bifemsh_l.fiber_length
+y[172] = sar_l.activation
+y[173] = sar_l.fiber_length
+y[174] = add_long_l.activation
+y[175] = add_long_l.fiber_length
+y[176] = add_brev_l.activation
+y[177] = add_brev_l.fiber_length
+y[178] = add_mag1_l.activation
+y[179] = add_mag1_l.fiber_length
+y[180] = add_mag2_l.activation
+y[181] = add_mag2_l.fiber_length
+y[182] = add_mag3_l.activation
+y[183] = add_mag3_l.fiber_length
+y[184] = tfl_l.activation
+y[185] = tfl_l.fiber_length
+y[186] = pect_l.activation
+y[187] = pect_l.fiber_length
+y[188] = grac_l.activation
+y[189] = grac_l.fiber_length
+y[190] = glut_max1_l.activation
+y[191] = glut_max1_l.fiber_length
+y[192] = glut_max2_l.activation
+y[193] = glut_max2_l.fiber_length
+y[194] = glut_max3_l.activation
+y[195] = glut_max3_l.fiber_length
+y[196] = iliacus_l.activation
+y[197] = iliacus_l.fiber_length
+y[198] = psoas_l.activation
+y[199] = psoas_l.fiber_length
+y[200] = quad_fem_l.activation
+y[201] = quad_fem_l.fiber_length
+y[202] = gem_l.activation
+y[203] = gem_l.fiber_length
+y[204] = peri_l.activation
+y[205] = peri_l.fiber_length
+y[206] = rect_fem_l.activation
+y[207] = rect_fem_l.fiber_length
+y[208] = vas_med_l.activation
+y[209] = vas_med_l.fiber_length
+y[210] = vas_int_l.activation
+y[211] = vas_int_l.fiber_length
+y[212] = vas_lat_l.activation
+y[213] = vas_lat_l.fiber_length
+y[214] = med_gas_l.activation
+y[215] = med_gas_l.fiber_length
+y[216] = lat_gas_l.activation
+y[217] = lat_gas_l.fiber_length
+y[218] = soleus_l.activation
+y[219] = soleus_l.fiber_length
+y[220] = tib_post_l.activation
+y[221] = tib_post_l.fiber_length
+y[222] = flex_dig_l.activation
+y[223] = flex_dig_l.fiber_length
+y[224] = flex_hal_l.activation
+y[225] = flex_hal_l.fiber_length
+y[226] = tib_ant_l.activation
+y[227] = tib_ant_l.fiber_length
+y[228] = per_brev_l.activation
+y[229] = per_brev_l.fiber_length
+y[230] = per_long_l.activation
+y[231] = per_long_l.fiber_length
+y[232] = per_tert_l.activation
+y[233] = per_tert_l.fiber_length
+y[234] = ext_dig_l.activation
+y[235] = ext_dig_l.fiber_length
+y[236] = ext_hal_l.activation
+y[237] = ext_hal_l.fiber_length
+y[238] = ercspn_r.activation
+y[239] = ercspn_r.fiber_length
+y[240] = ercspn_l.activation
+y[241] = ercspn_l.fiber_length
+y[242] = intobl_r.activation
+y[243] = intobl_r.fiber_length
+y[244] = intobl_l.activation
+y[245] = intobl_l.fiber_length
+y[246] = extobl_r.activation
+y[247] = extobl_r.fiber_length
+y[248] = extobl_l.activation
+y[249] = extobl_l.fiber_length
+
+
+Loading desired kinematics from file ../RRA/Results/GIL12_free4_RRA_Kinematics_q.sto ...
+Storage: file=../RRA/Results/GIL12_free4_RRA_Kinematics_q.sto (nr=869 nc=34)
+
+
+Note- not filtering the desired kinematics.
+
+
+
+Loading external loads kinematics from file ../IK/GIL12_free4_ik.mot ...
+Storage: file=../IK/GIL12_free4_ik.mot (nr=111 nc=375)
+Model::formCompleteStorages(): WARNING- Did not find column tib_pat_r_tx in storage object.
+Model::formCompleteStorages(): WARNING- Did not find column tib_pat_r_ty in storage object.
+Model::formCompleteStorages(): WARNING- Did not find column tib_pat_r_r1 in storage object.
+Model::formCompleteStorages(): WARNING- Did not find column tib_pat_l_tx in storage object.
+Model::formCompleteStorages(): WARNING- Did not find column tib_pat_l_ty in storage object.
+Model::formCompleteStorages(): WARNING- Did not find column tib_pat_l_r1 in storage object.
+Low-pass filtering external load kinematics with a cutoff frequency of 6...
+Storage: file=../IK/GIL12_free4_ik.mot (nr=111 nc=375)
+
+Constructing function set for tracking...
+
+
+
+ taskSet size = 19
+
+Using the generalized coordinates specified in ../RRA/Results/GIL12_free4_RRA_Kinematics_q.sto to set the initial configuration.
+Can't perform operation: Could not load CFSQP library 'libosimCFSQP.so': libosimCFSQP.so: cannot open shared object file: No such file or directory
+CFSQP optimizer algorithm unavailable.  Will try to use IPOPT instead.
+
+Setting optimizer print level to 0.
+Setting optimizer convergence criterion to 1e-06.
+Setting optimizer maximum iterations to 2000.
+
+Setting cmc controller to not use verbose printing.
+
+
+
+================================================================
+================================================================
+Computing initial values for muscles states (activation, length)
+Start time = Sun Feb  3 11:00:49 2008
+================================================================
+
+=============================================
+rdCMC.computeInitialStates: ti=0.14167
+=============================================
+rdCMC.computeControls:  t = 0.14167
+rdCMC.computeControls:  t = 0.14167
+
+-----------------------------------------------------------------
+Finished computing initial states:
+-----------------------------------------------------------------
+Array[250]= -0.307179 0.852368 0.675551 0.123633 0.133715 -0.100601 -0.0400506 -0.202153 -0.198819 0.00326021 -0.310686 -1.108 0.0249788 -0.0136338 0.304683 -0.186173 4.97848e-17 -9.70724e-17 0.166167 0.231938 -0.105102 -0.000492969 -0.304112 -0.380219 0.0313257 -0.0146724 0.245666 0.0821599 2.57764e-16 -1.18483e-16 -0.364432 -0.224682 0.0942146 -0.0383629 1.09179 0.247558 -0.368529 -0.196414 -0.0276822 4.1036 -0.10248 4.44281 0.00362519 -0.0259518 -2.21268 -0.023022 0.00266612 0.0315125 3.16451 1.09703e-15 -2.28563e-15 -1.9844 -0.332663 -4.03707 -0.00970446 0.00631771 1.14656 0.00723731 -0.00167167 -0.272166 1.27392 3.58921e-15 -5.9596e-16 0.624414 1.8741 -2.98099 0.289731 0.025866 0.02 0.0464529 0.02 0.0328759 0.180688 0.0449586 0.0760039 0.0352382 0.02 0.0179692 0.154862 0.0203307 0.0769001 0.123664 0.02 0.0471999 0.348548 0.10566 0.136002 0.334721 0.0914789 0.0912012 0.02 0.0953064 0.02 0.0517672 0.02 0.0647109 0.02 0.0738369 0.0633834 0.0810784 0.02 0.0577221 0.0468017 0.22204 0.02 0.0458837 0.02 0.0533163 0.02 0.067131 0.292856 0.0773705 0.306451 0.0717857 0.02 0.0327101 0.02 0.0152019 0.02 0.00725072 0.02 0.109178 0.02 0.068481 0.02 0.0687635 0.02 0.0664607 0.0418171 0.0192333 0.0275579 0.0205259 0.02 0.0247624 0.02 0.0215363 0.02 0.0209201 0.02 0.025416 0.299931 0.0589727 0.02 0.0335458 0.02 0.0332958 0.029543 0.0580687 0.179548 0.0708425 0.0706638 0.0781387 0.199331 0.0402711 0.285912 0.0636297 0.232022 0.0487447 0.0319775 0.056345 0.056073 0.0484456 0.0977613 0.0319546 0.02 0.0404259 0.02 0.148691 0.02 0.0670627 0.02 0.120199 0.0369849 0.3422 0.02 0.0660747 0.02 0.0741187 0.02 0.030346 0.02 0.0481886 0.02 0.0710974 0.0569696 0.084792 0.02 0.0440309 0.02 0.222798 0.215543 0.0613272 0.211368 0.0656187 0.02 0.0663935 0.02 0.0708338 0.02 0.0658918 0.0239004 0.0246353 0.02 0.0157352 0.0508399 0.0179562 0.130688 0.0814895 0.050884 0.046526 0.0532616 0.0461779 0.0708945 0.0438093 0.02 0.0364168 0.02 0.0390336 0.02 0.0318146 0.02 0.0226458 0.02 0.0220255 0.02 0.027645 0.0922718 0.0519538 0.02 0.0341543 0.02 0.0345954 0.02 0.0529861 0.0393183 0.064889 0.02 0.0713556 0.233595 0.0965643 0.0484914 0.0868855 0.281837 0.0720337 0.02 0.0359887 0.02 0.0772475 0.0608301 0.0670963
+=================================================================
+Start time   = Sun Feb  3 11:00:49 2008
+Finish time  = Sun Feb  3 11:01:03 2008
+Elapsed time = 14 seconds.
+=================================================================
+
+
+
+================================================================
+================================================================
+Using CMC to track the specified kinematics
+Integrating from 0.17167 to 0.96967
+Start time = Sun Feb  3 11:01:03 2008
+================================================================
+rdCMC.computeControls:  t = 0.17167
+WARN- small force range for quad_fem_l (0.316462 to 0.353191)
+WARN- small force range for gem_l (0.152983 to 0.156879)
+rdCMC.computeControls:  t = 0.18167
+WARN- small force range for quad_fem_l (0.305602 to 0.342387)
+WARN- small force range for gem_l (0.150381 to 0.154298)
+rdCMC.computeControls:  t = 0.19167
+WARN- small force range for quad_fem_l (0.302278 to 0.339166)
+WARN- small force range for gem_l (0.149204 to 0.152996)
+rdCMC.computeControls:  t = 0.20167
+WARN- small force range for quad_fem_l (0.30806 to 0.345107)
+WARN- small force range for gem_l (0.149341 to 0.153213)
+rdCMC.computeControls:  t = 0.21167
+WARN- small force range for quad_fem_l (0.325984 to 0.363283)
+WARN- small force range for gem_l (0.151814 to 0.155767)
+rdCMC.computeControls:  t = 0.22167
+WARN- small force range for gem_l (0.156429 to 0.160451)
+rdCMC.computeControls:  t = 0.23167
+rdCMC.computeControls:  t = 0.24167
+rdCMC.computeControls:  t = 0.25167
+rdCMC.computeControls:  t = 0.26167
+rdCMC.computeControls:  t = 0.27167
+rdCMC.computeControls:  t = 0.28167
+WARN- small force range for gem_r (0.162077 to 0.622529)
+rdCMC.computeControls:  t = 0.29167
+WARN- small force range for gem_r (0.159142 to 0.161613)
+rdCMC.computeControls:  t = 0.30167
+WARN- small force range for gem_r (0.15569 to 0.158515)
+rdCMC.computeControls:  t = 0.31167
+WARN- small force range for gem_r (0.152716 to 0.155829)
+rdCMC.computeControls:  t = 0.32167
+WARN- small force range for gem_r (0.151252 to 0.154513)
+rdCMC.computeControls:  t = 0.33167
+WARN- small force range for gem_r (0.156001 to 0.157758)
+rdCMC.computeControls:  t = 0.34167
+WARN- small force range for gem_r (0.161158 to 0.162928)
+rdCMC.computeControls:  t = 0.35167
+rdCMC.computeControls:  t = 0.36167
+rdCMC.computeControls:  t = 0.37167
+rdCMC.computeControls:  t = 0.38167
+rdCMC.computeControls:  t = 0.39167
+rdCMC.computeControls:  t = 0.40167
+rdCMC.computeControls:  t = 0.41167
+rdCMC.computeControls:  t = 0.42167
+rdCMC.computeControls:  t = 0.43167
+rdCMC.computeControls:  t = 0.44167
+rdCMC.computeControls:  t = 0.45167
+rdCMC.computeControls:  t = 0.46167
+rdCMC.computeControls:  t = 0.47167
+rdCMC.computeControls:  t = 0.48167
+rdCMC.computeControls:  t = 0.49167
+rdCMC.computeControls:  t = 0.50167
+rdCMC.computeControls:  t = 0.51167
+rdCMC.computeControls:  t = 0.52167
+WARN- small force range for lat_gas_l (0.680616 to 0.933639)
+rdCMC.computeControls:  t = 0.53167
+WARN- small force range for med_gas_l (1.54468 to 1.55052)
+WARN- small force range for lat_gas_l (0.676474 to 0.679256)
+rdCMC.computeControls:  t = 0.54167
+WARN- small force range for med_gas_l (1.53371 to 1.54032)
+WARN- small force range for lat_gas_l (0.671583 to 0.674711)
+rdCMC.computeControls:  t = 0.55167
+WARN- small force range for med_gas_l (1.52303 to 1.53041)
+WARN- small force range for lat_gas_l (0.666806 to 0.670251)
+rdCMC.computeControls:  t = 0.56167
+WARN- small force range for med_gas_l (1.51431 to 1.52239)
+WARN- small force range for lat_gas_l (0.662889 to 0.666603)
+rdCMC.computeControls:  t = 0.57167
+WARN- small force range for med_gas_l (1.50873 to 1.51724)
+WARN- small force range for lat_gas_l (0.660433 to 0.664245)
+rdCMC.computeControls:  t = 0.58167
+WARN- small force range for med_gas_l (1.51862 to 1.52325)
+WARN- small force range for lat_gas_l (0.664583 to 0.666639)
+rdCMC.computeControls:  t = 0.59167
+WARN- small force range for med_gas_l (1.53809 to 1.54089)
+WARN- small force range for lat_gas_l (0.67258 to 0.673798)
+rdCMC.computeControls:  t = 0.60167
+WARN- small force range for lat_gas_l (0.681175 to 0.682267)
+rdCMC.computeControls:  t = 0.61167
+rdCMC.computeControls:  t = 0.62167
+rdCMC.computeControls:  t = 0.63167
+rdCMC.computeControls:  t = 0.64167
+rdCMC.computeControls:  t = 0.65167
+rdCMC.computeControls:  t = 0.66167
+rdCMC.computeControls:  t = 0.67167
+rdCMC.computeControls:  t = 0.68167
+rdCMC.computeControls:  t = 0.69167
+rdCMC.computeControls:  t = 0.70167
+rdCMC.computeControls:  t = 0.71167
+rdCMC.computeControls:  t = 0.72167
+rdCMC.computeControls:  t = 0.73167
+rdCMC.computeControls:  t = 0.74167
+rdCMC.computeControls:  t = 0.75167
+rdCMC.computeControls:  t = 0.76167
+rdCMC.computeControls:  t = 0.77167
+rdCMC.computeControls:  t = 0.78167
+rdCMC.computeControls:  t = 0.79167
+rdCMC.computeControls:  t = 0.80167
+rdCMC.computeControls:  t = 0.81167
+rdCMC.computeControls:  t = 0.82167
+rdCMC.computeControls:  t = 0.83167
+rdCMC.computeControls:  t = 0.84167
+rdCMC.computeControls:  t = 0.85167
+rdCMC.computeControls:  t = 0.86167
+rdCMC.computeControls:  t = 0.87167
+rdCMC.computeControls:  t = 0.88167
+rdCMC.computeControls:  t = 0.89167
+rdCMC.computeControls:  t = 0.90167
+rdCMC.computeControls:  t = 0.91167
+rdCMC.computeControls:  t = 0.92167
+rdCMC.computeControls:  t = 0.93167
+rdCMC.computeControls:  t = 0.94167
+rdCMC.computeControls:  t = 0.95167
+----------------------------------------------------------------
+Finished tracking the specified kinematics
+=================================================================
+Start time   = Sun Feb  3 11:01:03 2008
+Finish time  = Sun Feb  3 11:04:08 2008
+Elapsed time = 185 seconds.
+================================================================
+
+
+Printing results of investigation GIL12_free4_fixed_CMC_Jan08_unconstr to Results.
+
+
+Average residuals:
+FX=1.16244 FY=-0.837841 FZ=-2.43142
+MX=0.218886 MY=0.0696624 MZ=1.62498
+
+
+Deleted model default

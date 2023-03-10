@@ -1,0 +1,28 @@
+-------------------------------------------------------
+This program includes software developed by the
+Apache Software Foundation (http://www.apache.org/).
+-------------------------------------------------------
+
+Deleted model 
+RegisterTypes_SdfastEngine
+
+-------------------------------------------------------
+Library SdfastEngine...
+-------------------------------------------------------
+
+RegisterTypes_SimbodyEngine
+
+-------------------------------------------------------
+Library SimbodyEngine...
+-------------------------------------------------------
+
+Constructing tool from setup file GIL12_free4_Setup_invdyn_ik.xml.
+
+
+Exception:
+  Object: ERR- Could not open file GIL12_free4_Setup_invdyn_ik.xml. It may
+  not exist or you don't have permission to read it.
+  file= \Projects\OpenSim105\OpenSim\Common\Object.cpp
+  line= 122
+
+Deleted model default
