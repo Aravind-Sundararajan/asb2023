@@ -1,0 +1,33 @@
+-------------------------------------------------------
+This program includes software developed by the
+Apache Software Foundation (http://www.apache.org/).
+-------------------------------------------------------
+
+Deleted model 
+RegisterTypes_SdfastEngine
+
+-------------------------------------------------------
+Library SdfastEngine...
+-------------------------------------------------------
+
+RegisterTypes_SimbodyEngine
+
+-------------------------------------------------------
+Library SimbodyEngine...
+-------------------------------------------------------
+
+
+
+cmc:
+version 1.5.1, build date 10:22:39 Apr 28 2008
+
+Option              Argument         Action / Notes
+------              --------         --------------
+-Help, -H                            Print the command-line options for cmc.
+-PrintSetup, -PS                     Print a default setup file for cmc.exe (setup_cmc_default.xml).
+-Setup, -S          SetupFileName    Specify the name of the XML setup file for the CMC investigation.
+-PropertyInfo, -PI                   Print help information for properties in setup files.
+-Library, -L        LibraryName      Specifiy a library to load. Do not include the extension (e.g., .lib or .dll).
+                                     To load more than one library, repeat the -Library command-line option.
+
+Deleted model default

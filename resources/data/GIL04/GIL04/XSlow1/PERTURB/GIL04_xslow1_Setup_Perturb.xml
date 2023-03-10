@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PerturbationTool name="GIL04_xslow1_Perturb">
+	<model_file>../../GIL04_gait2392_simbody_adjusted.osim</model_file>
+	<replace_actuator_set> false </replace_actuator_set>
+	<actuator_set_files>../../GIL04_CMC_Actuators.xml</actuator_set_files>
+	<output_precision> 20 </output_precision>
+	<results_directory> Results </results_directory>
+
+	<initial_time> 0.430000 </initial_time>
+	<final_time> 1.859000 </final_time>
+	<maximum_number_of_integrator_steps> 20000 </maximum_number_of_integrator_steps>
+	<maximum_integrator_step_size> 0.0001 </maximum_integrator_step_size>
+	<integrator_error_tolerance> 1e-006 </integrator_error_tolerance>
+	<integrator_fine_tolerance> 1e-010 </integrator_fine_tolerance>
+
+	<controls_file> ../CMC/Results/GIL04_xslow1_fixed_CMC_constr_controls.xml </controls_file>
+	<cop_file> ../IK/GIL04_xslow1_ik.mot </cop_file>
+	<coordinates_file> ../CMC/Results/GIL04_xslow1_fixed_CMC_constr_Kinematics_q.sto </coordinates_file>
+	<speeds_file> ../CMC/Results/GIL04_xslow1_fixed_CMC_constr_Kinematics_u.sto </speeds_file>
+	<states_file> ../CMC/Results/GIL04_xslow1_fixed_CMC_constr_states.sto </states_file>
+
+	<AnalysisSet name="Analyses">
+		<objects>
+			<BodyKinematics name="BodyKinematics">
+				<on> true </on>
+				<step_interval> 10 </step_interval>
+				<in_degrees> true </in_degrees>
+				<bodies> center_of_mass </bodies>
+			</BodyKinematics>
+		</objects>
+	</AnalysisSet>
+	<external_loads_file> ../IK/GIL04_xslow1_ik.mot </external_loads_file>
+	<external_loads_model_kinematics_file> ../IK/GIL04_xslow1_ik.mot </external_loads_model_kinematics_file>
+	<external_loads_body1> calcn_r </external_loads_body1>
+	<external_loads_body2> calcn_l </external_loads_body2>
+	<lowpass_cutoff_frequency_for_load_kinematics> 6.0 </lowpass_cutoff_frequency_for_load_kinematics>
+
+	<linear_spring_transition_start_force> 5.0000 </linear_spring_transition_start_force>
+	<linear_spring_transition_end_force> 15.0000 </linear_spring_transition_end_force>
+	<body1_linear_corrective_spring_active> true </body1_linear_corrective_spring_active>
+	<body1_torsional_corrective_spring_active> true </body1_torsional_corrective_spring_active>
+	<body1_torsional_corrective_spring_time_on> 0.0000  </body1_torsional_corrective_spring_time_on>
+	<body1_torsional_corrective_spring_time_off> 0.8400  </body1_torsional_corrective_spring_time_off>
+	<body2_linear_corrective_spring_active> true </body2_linear_corrective_spring_active>
+	<body2_torsional_corrective_spring_active> true </body2_torsional_corrective_spring_active>
+	<body2_torsional_corrective_spring_time_on> 1.2400  </body2_torsional_corrective_spring_time_on>
+	<body2_torsional_corrective_spring_time_off> 1.7400  </body2_torsional_corrective_spring_time_off>
+	<scaling_rise_time> 0.001 </scaling_rise_time>
+	<corrective_spring_linear_stiffness> 5e+006 5e+006 5e+006 </corrective_spring_linear_stiffness>
+	<corrective_spring_linear_damping> 1500 1500 1500 </corrective_spring_linear_damping>
+	<corrective_spring_torsional_stiffness> 100000 100000 100000 </corrective_spring_torsional_stiffness>
+	<corrective_spring_torsional_damping> 1000 1000 1000 </corrective_spring_torsional_damping>
+
+	<perturbation_time_window> 0.03 </perturbation_time_window>
+	<perturbation_time_increment> 0.01 </perturbation_time_increment>
+	<perturbation_size> 1 </perturbation_size>
+	<perturbed_actuators> all </perturbed_actuators>
+	<perturb_gravity> true </perturb_gravity>
+
+</PerturbationTool>
