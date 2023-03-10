@@ -1,0 +1,161 @@
+-------------------------------------------------------
+This program includes software developed by the
+Apache Software Foundation (http://www.apache.org/).
+-------------------------------------------------------
+
+Deleted model 
+RegisterTypes_SimbodyEngine
+
+-------------------------------------------------------
+Library SimbodyEngine...
+-------------------------------------------------------
+
+Processing subject GIL06
+
+Step 1: Loading generic model
+Created model 3DGaitModel2392 from file ../../gait2392_simbody.osim
+Handling locked coordinate.
+Handling locked coordinate.
+Handling locked coordinate.
+Handling locked coordinate.
+SimbodyCoordinate.setValue: WARN- coordinate subtalar_angle_r is locked. Unable to change its value.
+SimbodyCoordinate.setValue: WARN- coordinate mtp_angle_r is locked. Unable to change its value.
+SimbodyCoordinate.setValue: WARN- coordinate subtalar_angle_l is locked. Unable to change its value.
+SimbodyCoordinate.setValue: WARN- coordinate mtp_angle_l is locked. Unable to change its value.
+Loading marker set from '../../gait2392_GIL_Scale_MarkerSet.xml'
+Updated markers in model 3DGaitModel2392
+
+Step 2: Scaling generic model
+Loaded marker file GIL06_static.trc (39 markers, 201 frames)
+Measurement 'torso'
+	pair 0 (midasis, neck): model = 0.538518, experimental = 0.536056
+	overall scale factor = 0.995428
+Measurement 'pelvis'
+	pair 0 (asis_r, asis_l): model = 0.256, experimental = 0.245925
+	overall scale factor = 0.960646
+Measurement 'thigh'
+	pair 0 (hip_r, knee_r): model = 0.395846, experimental = 0.370922
+	pair 1 (hip_l, knee_l): model = 0.395846, experimental = 0.361998
+	overall scale factor = 0.925764
+Measurement 'shank'
+	pair 0 (knee_r, ankle_r): model = 0.43, experimental = 0.362708
+	pair 1 (knee_l, ankle_l): model = 0.43, experimental = 0.373999
+	overall scale factor = 0.856636
+Measurement 'foot'
+	pair 0 (heel_r, toe_r): model = 0.181, experimental = 0.171978
+	pair 1 (heel_l, toe_l): model = 0.181, experimental = 0.157468
+	overall scale factor = 0.91007
+Handling locked coordinate.
+Handling locked coordinate.
+Handling locked coordinate.
+Handling locked coordinate.
+SimbodyCoordinate.setValue: WARN- coordinate subtalar_angle_r is locked. Unable to change its value.
+SimbodyCoordinate.setValue: WARN- coordinate mtp_angle_r is locked. Unable to change its value.
+SimbodyCoordinate.setValue: WARN- coordinate subtalar_angle_l is locked. Unable to change its value.
+SimbodyCoordinate.setValue: WARN- coordinate mtp_angle_l is locked. Unable to change its value.
+Wrote scale file GIL06_gait2392_simbody_ScaleSet_Applied.xml for model GIL06
+
+Step 3: Placing markers on model
+Loaded marker file GIL06_static.trc (39 markers, 201 frames)
+Averaged frames from time 0.25 to 1.675 in GIL06_static.trc (frames 30 to 201)
+Deleted 0 unused markers from model GIL06
+Storage: file=GIL06_static.mot (nr=201 nc=141)
+Marker Tasks:
+	asis_r: weight 16410 from file (columns 24-26)
+	asis_l: weight 16410 from file (columns 27-29)
+	midasis: weight 16410 from file (columns 21-23)
+	psis_r: weight 16410 from file (columns 30-32)
+	psis_l: weight 16410 from file (columns 33-35)
+	hip_r: weight 1 from file (columns 3-5)
+	hip_l: weight 1 from file (columns 6-8)
+	midhip: weight 16410 from file (columns 0-2)
+	epicondLat_r: weight 1 from file (columns 36-38)
+	epicondMed_r: weight 1 from file (columns 42-44)
+	thighwand_r: weight 1 from file (columns 87-89)
+	upperleg1_r: weight 1 from file (columns 93-95)
+	upperleg2_r: weight 1 from file (columns 99-101)
+	malleolusLat_r: weight 1 from file (columns 48-50)
+	malleolusMedv_r: weight 1 from file (columns 54-56)
+	shankwand_r: weight 1 from file (columns 105-107)
+	lowerleg1_r: weight 1 from file (columns 111-113)
+	knee_r: weight 3282 from file (columns 9-11)
+	ankle_r: weight 16410 from file (columns 15-17)
+	toe_r: weight 1 from file (columns 81-83)
+	heel_r: weight 1 from file (columns 60-62)
+	epicondLat_l: weight 1 from file (columns 39-41)
+	epicondMed_l: weight 1 from file (columns 45-47)
+	thighwand_l: weight 1 from file (columns 90-92)
+	upperleg1_l: weight 1 from file (columns 96-98)
+	upperleg2_l: weight 1 from file (columns 102-104)
+	malleolusLat_l: weight 1 from file (columns 51-53)
+	malleolusMedv_l: weight 1 from file (columns 57-59)
+	shankwand_l: weight 1 from file (columns 108-110)
+	lowerleg1_l: weight 1 from file (columns 114-116)
+	knee_l: weight 3282 from file (columns 12-14)
+	ankle_l: weight 16410 from file (columns 18-20)
+	toe_l: weight 1 from file (columns 84-86)
+	heel_l: weight 1 from file (columns 63-65)
+	subclavicle_r: weight 1 from file (columns 75-77)
+	subclavicle_l: weight 1 from file (columns 78-80)
+	neck: weight 3282 from file (columns 72-74)
+	sternalnotch: weight 3282 from file (columns 66-68)
+	xyphoidprocess: weight 3282 from file (columns 69-71)
+Unprescribed Coordinate Tasks (with nonzero weight):
+	pelvis_tx: weight 1641 constant target value of 0
+	pelvis_ty: weight 1641 constant target value of 0.93
+	pelvis_tz: weight 1641 constant target value of 0
+	pelvis_tilt: weight 3282 constant target value of 0
+	pelvis_list: weight 1641 constant target value of 0
+	pelvis_rotation: weight 1641 constant target value of 0
+	hip_flexion_r: weight 1641 constant target value of 0
+	hip_adduction_r: weight 1641 constant target value of 0
+	hip_rotation_r: weight 1641 constant target value of 0
+	knee_angle_r: weight 1641 constant target value of 0
+	ankle_angle_r: weight 1641 constant target value of 0
+	hip_flexion_l: weight 1641 constant target value of 0
+	hip_adduction_l: weight 1641 constant target value of 0
+	hip_rotation_l: weight 1641 constant target value of 0
+	knee_angle_l: weight 1641 constant target value of 0
+	ankle_angle_l: weight 1641 constant target value of 0
+Prescribed Coordinate Tasks:
+	subtalar_angle_r: constant target value of 0
+	mtp_angle_r: constant target value of 0
+	subtalar_angle_l: constant target value of 0
+	mtp_angle_l: constant target value of 0
+
+Solving IK trial: 
+Successfully linked to CFSQP library 'osimCFSQP.dll'
+Using CFSQP optimizer algorithm.
+Handling locked coordinate.
+Handling locked coordinate.
+Handling locked coordinate.
+Handling locked coordinate.
+Handling locked coordinate.
+Handling locked coordinate.
+Handling locked coordinate.
+Handling locked coordinate.
+Handling locked coordinate.
+Handling locked coordinate.
+Handling locked coordinate.
+Handling locked coordinate.
+Handling locked coordinate.
+Handling locked coordinate.
+Handling locked coordinate.
+Handling locked coordinate.
+Handling locked coordinate.
+Handling locked coordinate.
+Handling locked coordinate.
+Handling locked coordinate.
+Handling locked coordinate.
+Handling locked coordinate.
+Handling locked coordinate.
+Handling locked coordinate.
+Handling locked coordinate.
+Handling locked coordinate.
+Handling locked coordinate.
+Handling locked coordinate.
+Frame 1 (t=0.25):	total weighted squared error = 1412.99, marker error: RMS=0.0789566, max=0.214754 (thighwand_l), coord error: RMS=0.211288, max=0.804935 (pelvis_tx)
+Moved markers in model GIL06 to match locations in marker file GIL06_static.trc
+Wrote model file ../GIL06_gait2392_simbody.osim from model GIL06
+Deleted model GIL06
+Deleted model default

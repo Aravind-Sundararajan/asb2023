@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<IKTool name="GIL06_free2">
+	<model_file> ../../GIL06_gait2392_simbody.osim </model_file>
+	<optimizer_algorithm>cfsqp</optimizer_algorithm>
+	<IKTaskSet file="../../../gait2392_GIL_IK_Tasks.xml"/>
+	<IKTrialSet>
+		<objects>
+		<IKTrial name="GIL06_free2_ik">
+			<marker_file> GIL06_free2.trc </marker_file>
+			<coordinate_file> GIL06_free2.mot </coordinate_file>
+			<time_range> 0.12916661 1.15833330 </time_range>
+			<output_motion_file> GIL06_free2_ik.mot </output_motion_file>
+			<include_markers> true </include_markers>
+		</IKTrial>
+		</objects>
+	</IKTrialSet>
+</IKTool>
